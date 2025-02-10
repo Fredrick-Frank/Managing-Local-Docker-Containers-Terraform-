@@ -20,6 +20,11 @@ Basic commands:
 
 
 ***To scale up the web server to a replica of 2:***
+
+
+
+
+
 resource "docker_container" "web" {
   count = 2
   name  = "web_server-${count.index}"
